@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" href="styles.css">
+
+<Style>
+/* Basic reset for body and header */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Aligns items vertically center */
+    padding: 10px 20px;
+    background-color: #e4eedc;
+    color: white;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Aligns navigation items horizontally */
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.search {
+    display: flex; /* Aligns search input and button horizontally */
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #777;
+}
+
+
+
+
+.flexbox-container {
+    display: flex;
+}
+
+
+.flexbox-item {
+    width: 200px;
+    margin: 0px;
+    border: 33px solid white;
+    background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+    min-height: 500px;
+    flex-grow: 1;
+  background-color: #f7f9fd
+ }
+
+.flexbox-item-2 {
+        min-height: 300px;
+
+    flex-grow: 3;
+    align-self: center;
+    background-color: #e4eedc;
+
+}
+
+
+
+ .flexbox-item-3 {
+        min-height: 300px;
+
+    flex-grow: 3;
+    align-self: center;
+    background-color: #e4eedc;
+
+}
+
+ 
+
+.tablecontainer{
+Display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+Flex-direction: column;
+
+}
+
+
+
+img {
+  width: 100%;
+}
+
+
+
+</style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">Brand</a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">Blog</a></li>
+                <li><a href="#services">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+    </header>
+
+
+<div class="flexbox-container">
+     <div class="flexbox-item flexbox-item-1"> 
+       
+       
+       <h1 style="text-align: center">Shop</h1>
+       
+       <ul>
+
+         <li>Fertilizers & Treatments</li>
+                 <li> Soil</li>
+                  <li> Plant Tools</li>
+                  <li>Pottery</li>
+
+                  <li>Plants</li>
+
+
+       </ul>
+       
+       
+     </div>
+
+
+        <div class="flexbox-item flexbox-item-2">
+
+<img src="strawberries.jpg">
+<h1 style="text-align: center"> Organic Strawberry Plants</h1>
+<p style="text-align: center"> $19.95</p>
+     </div>
+
+
+     <div class="flexbox-item flexbox-item-3"> 
+<img src="blueberries.jpg">
+<h1 style="text-align: center"> Organic Blueberry Plants</h1>
+<p style="text-align: center"> $19.95</p>
+
+
+      </div>
+</body>
+</html>
